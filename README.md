@@ -1,15 +1,23 @@
 # 🎬 Movie Explorer
 
+**Project Name :** MovieExplore  — A Movie Library
 > **Objective:** Build a responsive **Movie Explorer Application** using React. Users should be able to browse movies, search for specific titles, and view detailed information in an interactive modal.
+
+**Github Repo Link :**    
+**Live URL :**   
 
 ---
 
 ## Technology Stack
 
-* **Core:** JavaScript, React
-* **Styling:** Tailwind CSS  
-* **Data:** Free Movie Database API *(e.g., OMDB, TMDB, TVMaze)*
-* **TVMaze Doc:** [API](https://www.tvmaze.com/api)
+| Layer                      | Technology                    |
+|--------------              |-------------------------------|
+| **Frontend**               | React.js, JavaScript               |
+| **Styling**                | Tailwind CSS  |
+| **Routing**                | React Router      | 
+| **Version Ctrl**           | Git, GitHub       |
+| **Deployment**             | Vercel       |
+| **Data:**                  | [Free Movie Database API](https://www.tvmaze.com/api)       |
 
 ---
 
@@ -19,17 +27,11 @@
 
 The Home Page serves as the landing page and must include the following sections:
 
-####  Navbar
-* Application logo or brand name.
-* Navigation links.
-* A prominent button/link to navigate to the **Movie Listing Page**.
+####  Navbar 
 
 ####  Hero Banner
-A visually attractive section to hook the user. It must include:
-* A movie-related background image or gradient.
-* Application title/heading.
-* A short, engaging description.
-* A Call-To-Action (CTA) button navigating to the **Movie Listing Page**.
+ 
+####  Footer 
 
 **📐 UI Wireframe Example:**
 ```text
@@ -47,11 +49,6 @@ A visually attractive section to hook the user. It must include:
 ╰──────────────────────────────────────────────────────╯
 ```
 
-####  Footer
-* Application name.
-* Copyright information (e.g., `© 2026 MovieExplorer`).
-* Optional social media or GitHub links.
-
 ---
 
 ###  2. Movie Listing Page
@@ -59,10 +56,7 @@ A visually attractive section to hook the user. It must include:
 Create a dedicated page where users can browse and search for movies.
 
 ####  Search Functionality
-* Include a prominent search bar at the top of the page.
-* Users must be able to search by **movie title**.
-* The movie grid should dynamically update based on the search query.
-
+ 
 ** UI Wireframe Example:**
 ```text
 ╭──────────────────────────────────────────────────────╮
@@ -82,12 +76,7 @@ GET https://api.tvmaze.com/search/shows?q=girls
 Fetch movie data from your chosen **Free Movie Database API**. 
 
 #### 🎬 Movie Cards
-Display movies using reusable Card components. Each card must include:
-* Movie poster image.
-* Movie title/name.
-* Release year/date.
-* Rating (e.g., ⭐ 8.5).
-* A `See Details` button.
+ 
 
 ** UI Wireframe Example:**
 ```text
@@ -102,7 +91,6 @@ Display movies using reusable Card components. Each card must include:
 │  [ See Details ]    │
 ╰─────────────────────╯
 ```
->  **Requirement:** Cards must be displayed using a **responsive CSS Grid or Flexbox layout**.
 
 ---
 
@@ -115,9 +103,7 @@ Display movies using reusable Card components. Each card must include:
 ```bash
 GET https://api.tvmaze.com/shows
 ```
-
-**Description:**  
-Fetch all available TV shows.
+ 
 
 
 ### 🎞️ 3. Movie Details Modal
@@ -125,12 +111,7 @@ Fetch all available TV shows.
 When a user clicks the **See Details** button, open a modal overlay displaying in-depth information about the selected movie.
 
 **Modal Contents:**
-* Movie backdrop image or large poster.
-* Movie title.
-* Overview / Summary.
-* Rating and Release date.
-* Any additional relevant info from the API (e.g., Genre, Director).
-
+ 
 ** UI Wireframe Example:**
 ```text
 ╭──────────────────────────────────────────────╮
@@ -149,18 +130,25 @@ When a user clicks the **See Details** button, open a modal overlay displaying i
 │                              [ ❌ Close ]    │
 ╰──────────────────────────────────────────────╯
 ```
-
-**Interaction Requirements:**
-* Must be closable via the `✕` (Close) button.
-* *Optional:* Closable by clicking outside the modal (on the backdrop).
+ 
 
 ---
+## Getting Started
 
-## 📱 Responsive Design & UX
+### Prerequisites
+Make sure you have  npm installed.
 
-The application must be fully responsive and provide a seamless experience across all devices:
-*  **Mobile:** Single column layout, stacked elements, touch-friendly buttons.
-*  **Desktop:** 3-4+ column grid for movie cards, optimized spacing.
+### Installation & Local Setup
 
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/your-username/MovieExplore.git] 
+   cd MovieExplore
+2. **Install Dependencies:**
+   ```bash
+   npm install
+3. **Run the Development Server:**
+   ```bash
+   npm run dev
 ---
  
